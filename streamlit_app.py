@@ -239,12 +239,15 @@ def main():
 
                 Each purchase is rounded up to the nearest dollar, and the difference is invested in a portfolio of your choosing!
 
+                If your lunch costs RM 4.20, RM 5 will be charged to your card and the RM 0.80 difference is invested for you. 
+
 '''
                 , unsafe_allow_html=True)
 
     # Dictionary to store selections
     selections = {}
 
+    st.subheader("How much can you *SaveUp* with your daily spending?")
     # Create a single column layout
     with st.container():
         for question, category in question_category_mapping.items():
