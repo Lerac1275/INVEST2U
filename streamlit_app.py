@@ -124,6 +124,7 @@ def plot_investment_growth(initial_amount, risk_data):
             xanchor="left",
             x=-0.05
         )
+        , dragmode=False
     )
     
     return fig
@@ -301,7 +302,16 @@ def main():
 
         # Create the plot
         fig = plot_investment_growth(yearly_roundup, risk_data=risk_data)
-        st.plotly_chart(fig, use_container_width=True)
+        # Configure the plotly chart to disable zoom and resize functionality
+        config = {
+            # 'staticPlot':True,
+            'scrollZoom': False,
+            'displayModeBar': True,
+            'displaylogo': False,
+            'modeBarButtonsToRemove': ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d']
+        }
+
+        st.plotly_chart(fig, use_container_width=True, config=config)
 
         st.markdown("""
                     **Small, frequent investments can compound into substantial savings.** 
