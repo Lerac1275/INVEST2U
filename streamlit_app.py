@@ -235,7 +235,7 @@ def main():
     '''
 
     st.markdown('''
-                **INVEST2U** makes investing frictionless and fun with the *SaveUp Mechanic*.
+                **INVEST2U** makes investing frictionless and fun with the *SaveUp* Mechanic.
 
                 Each purchase is rounded up to the nearest dollar, and the difference is invested in a portfolio of your choosing!
 
