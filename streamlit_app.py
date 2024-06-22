@@ -17,8 +17,8 @@ risk_data = pd.DataFrame({
     , 'return': [3.8, 8.3, 11.5]
     , 'volatility': [1.5, 4, 8]
 })
-# FOr return projection
 
+# For return projection
 def plot_investment_growth(initial_amount, risk_data):
     # Define the date range
     date_range = pd.date_range(start="2024-06", end="2026-06", freq='M')
@@ -101,7 +101,7 @@ def plot_investment_growth(initial_amount, risk_data):
     # Update the layout
     fig.update_layout(
         title="Investment Growth next 2 Years",
-        hovermode='x unified',
+        hovermode='x',
         xaxis=dict(
             title="Date",
             titlefont=dict(size=18),
@@ -118,11 +118,11 @@ def plot_investment_growth(initial_amount, risk_data):
         font=dict(size=16),  # General font size for the plot
         template="plotly_dark"
         , legend=dict(
-            orientation="v",
+            orientation="h",
             yanchor="top",
-            y=1,
+            y=-0.3,
             xanchor="left",
-            x=0.01
+            x=-0.05
         )
     )
     
