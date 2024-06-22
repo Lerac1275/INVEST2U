@@ -241,7 +241,6 @@ def main():
 '''
                 , unsafe_allow_html=True)
 
-    st.subheader("How much can you *SaveUp* with your daily spending?")
     # Dictionary to store selections
     selections = {}
 
@@ -249,7 +248,7 @@ def main():
     with st.container():
         for question, category in question_category_mapping.items():
             options = get_options_by_category(category)
-            selections[question] = st.multiselect(question, options, format_func=format_options)
+            selections[question] = st.multiselect(question, options, format_func=format_options, placeholder='Choose one or more options')
 
     # Compute button. Only run when user wants to recompute
     if st.button('Round Up!'):
@@ -302,7 +301,7 @@ def main():
 
         # Create the plot
         fig = plot_investment_growth(yearly_roundup, risk_data=risk_data)
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
 
         st.markdown("""
                     **Small, frequent investments can compound into substantial savings.** 
