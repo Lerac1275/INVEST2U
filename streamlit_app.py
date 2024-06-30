@@ -128,7 +128,7 @@ def plot_investment_growth(initial_amount, risk_data):
         , legend=dict(
             orientation="h",
             yanchor="top",
-            y=-0.3,
+            y=-0.5,
             xanchor="left",
             x=-0.05
         )
