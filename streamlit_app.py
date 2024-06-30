@@ -388,7 +388,7 @@ def main():
                         
                         **Big things are powered by small wins!**
                         """)
-            st.subheader("Didn't hit achieve your goals?")
+            st.subheader("Didn't realise your goals?")
             st.markdown("Readjust your SaveUp amount and spending, then try again!")
             st.divider()
 
