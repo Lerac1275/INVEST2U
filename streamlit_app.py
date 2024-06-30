@@ -108,7 +108,7 @@ def plot_investment_growth(initial_amount, risk_data):
     
     # Update the layout
     fig.update_layout(
-        title="Investment Growth over the next 2 Years",
+        title="Investment growth over the next 2 years",
         hovermode='x',
         xaxis=dict(
             title="Date",
