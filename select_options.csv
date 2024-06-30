@@ -1,17 +1,17 @@
 category,option,price
-meal,Chicken Rice 🍚,7.20
-meal,Nasi Lemak 🍗,8.30
-meal,Teh Tarik ☕,3.20
-meal,Bubble Tea 🧋,5.50
-meal, Fruit Juice 🥤, 4.10
+meal,Chicken Rice 🍚,14.40
+meal,Nasi Lemak 🍗,16.3
+meal, Sushi 🍣, 25.30
+meal, Western 🍔, 38.40
+meal, Pasta 🍝, 30.80
+drink,Teh Tarik ☕,3.20
+drink,Bubble Tea 🧋,5.50
+drink, Fruit Juice 🥤, 4.10
 meal,Fruits 🍎,4.70
-meal, Sushi 🍣, 13.30
-meal, Western 🍔, 18.40
-meal, Pasta 🍝, 15.80
 transport,Public Transport 🚌,5.50
 transport,Driving 🛞,10.20
 transport,Grab 🚗,15.20
-leisure,Movie 🍿,30.40
+leisure,Movie 🍿,32.40
 leisure,Spa Day 💅,110.10
 leisure,Rock Climbing 🧗,60.20
 leisure,Theme Park 🎡, 120.30
